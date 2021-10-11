@@ -102,7 +102,7 @@ public class puissanceQuatreGame {
     }
 
     static boolean estGagne(int[][] grille, int color){
-
+        //problem here !!!
         for (int i=0; i<grille.length; ++i){
             for (int j = 0; j<grille[i].length; ++j){
                 int colorcase = grille[i][j];
@@ -151,6 +151,7 @@ public class puissanceQuatreGame {
         demandeEtJoue(grille, couleurJoueur);
 
         boolean gagne = estGagne(grille,couleurJoueur);
+
         if (gagne){
             if (couleurJoueur == rouge){
                 System.out.println(">>>>>Winner: O");
